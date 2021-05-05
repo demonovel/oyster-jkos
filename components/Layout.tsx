@@ -15,7 +15,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-      <nav>
+      <nav style={{display: 'none'}}>
         <Link href="/">
           <a>Home</a>
         </Link>{' '}
@@ -31,7 +31,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       </nav>
     </header>
     {children}
-    <footer>
+    <footer style={{display: 'none'}}>
       <hr />
       <span>I'm here to stay (Footer)</span>
     </footer>

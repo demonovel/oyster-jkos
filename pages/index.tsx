@@ -1,13 +1,12 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
+import PickExcel from '../components/PickExcel';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
+  <Layout title="街口請款報表">
+    <h1>街口請款報表 👋</h1>
     <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+      <PickExcel/>
     </p>
   </Layout>
 )

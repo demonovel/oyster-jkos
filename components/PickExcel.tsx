@@ -57,17 +57,16 @@ export default function PickExcel({
 
 	return (
 		<div>
-			<button onClick={() => openFileSelector()}>Select file</button>
+			<button onClick={() => openFileSelector()}>請選擇檔案...</button>
 			<br />
-			Number of selected files:
-			{plainFiles.length}
+			目前已經選擇的檔案數量: {plainFiles.length}
 			<br />
 			{/* If readAs is set to DataURL, You can display an image */}
 			<br />
 			{filesContent.map((data, i) =>
 			{
 				return (
-					<PrintJkosExcel data={data} />
+					<PrintJkosExcel key={data.name} data={data} />
 				)
 			})}
 		</div>

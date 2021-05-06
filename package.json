@@ -12,6 +12,7 @@
     "next": "canary",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "sass": "^1.32.12",
     "use-file-picker": "^1.0.1",
     "xlsx": "^0.16.9"
   },
@@ -21,6 +22,7 @@
     "@types/node": "latest",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.3",
+    "@types/sass": "^1.16.0",
     "typescript": "next"
   },
   "license": "MIT"

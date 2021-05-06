@@ -31,7 +31,7 @@ export default function PrintJkosExcel({
 	if (ws?.['A2']?.v !== '編號')
 	{
 		return (<div>
-			檔案不正確
+			<code>{data.name}</code> 檔案不正確
 		</div>)
 	}
 
@@ -94,15 +94,16 @@ export default function PrintJkosExcel({
 	}, {});
 
 	return <>
+		<code>{data.name}</code>
 		<table>
 			{Object.entries(ret)
 				.map(([n, b]) =>
 				{
-					return (<tr>
-						<td>{n}</td>
-						<td>交易金額 ${b.total_order}</td>
-						<td>請款金額 ${b.total}</td>
-						<td>共 ${b.num} 筆交易</td>
+					return (<tr key={n}>
+						<td><code>{n}</code></td>
+						<td>交易金額 <code>${b.total_order}</code></td>
+						<td>請款金額 <code>${b.total}</code></td>
+						<td>共 <code>${b.num}</code> 筆交易</td>
 					</tr>)
 				})}
 		</table>

@@ -67,7 +67,7 @@ export default function PickExcel({
 			{filesContent.map((data, i) =>
 			{
 				return (
-					<PrintJkosExcel data={data}/>
+					<PrintJkosExcel data={data} />
 				)
 			})}
 		</div>
